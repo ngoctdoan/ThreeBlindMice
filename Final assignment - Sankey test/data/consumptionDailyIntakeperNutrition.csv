@@ -1,0 +1,71 @@
+Type of food,Social Category,Total,At home,Total away from home,Restaurant,Fast food,School,Other
+Energy (calories),Total population,2044.20,1439.21,604.99,171.45,238.78,42.32,152.44
+Energy (calories),Children,1900.26,1306.64,593.62,96.43,230.33,150.82,116.04
+Energy (calories),Adults,2091.95,1483.18,608.76,196.33,241.58,6.33,164.52
+Energy (calories),Lower income,1969.64,1427.05,542.59,119.44,236.43,57.69,129.04
+Energy (calories),Higher income,2091.43,1446.92,644.51,204.39,240.27,32.59,167.27
+Calcium (mg),Total population,986.78,734.75,252.03,60.28,96.26,28.95,66.54
+Calcium (mg),Children,1030.96,742.03,288.92,39.50,92.76,106.88,49.78
+Calcium (mg),Adults,972.13,732.33,239.80,67.18,97.42,3.10,72.10
+Calcium (mg),Lower income,933.10,706.31,226.78,38.81,91.82,41.16,55.01
+Calcium (mg),Higher income,1020.77,752.75,268.02,73.88,99.07,21.22,73.85
+Cholesterol (mg),Total population,264.97,178.61,86.36,31.85,32.38,4.70,17.44
+Cholesterol (mg),Children,219.15,150.18,68.98,14.99,27.17,16.17,10.65
+Cholesterol (mg),Adults,280.17,188.04,92.13,37.44,34.10,0.90,19.69
+Cholesterol (mg),Lower income,258.14,183.58,74.56,21.78,31.18,6.69,14.92
+Cholesterol (mg),Higher income,269.30,175.47,93.83,38.22,33.13,3.45,19.03
+Fiber (mg),Total population,15.89,12.04,3.86,1.16,1.42,0.31,0.96
+Fiber (mg),Children,13.24,9.50,3.74,0.59,1.34,1.12,0.70
+Fiber (mg),Adults,16.77,12.88,3.89,1.35,1.45,0.05,1.05
+Fiber (mg),Lower income,14.77,11.34,3.43,0.80,1.37,0.43,0.83
+Fiber (mg),Higher income,16.61,12.48,4.12,1.38,1.46,0.24,1.05
+Iron (mg),Total population,15.27,11.53,3.74,1.09,1.50,0.27,0.87
+Iron (mg),Children,14.19,10.63,3.56,0.57,1.35,0.97,0.67
+Iron (mg),Adults,15.63,11.83,3.80,1.27,1.55,0.04,0.94
+Iron (mg),Lower income,14.45,11.10,3.35,0.77,1.45,0.38,0.75
+Iron (mg),Higher income,15.79,11.81,3.98,1.30,1.53,0.20,0.94
+Saturated fat (mg),Total population,25.53,17.12,8.40,2.36,3.58,0.59,1.87
+Saturated fat (mg),Children,24.42,16.09,8.34,1.35,3.37,2.14,1.48
+Saturated fat (mg),Adults,25.89,17.47,8.42,2.70,3.65,0.08,2.00
+Saturated fat (mg),Lower income,24.13,16.70,7.43,1.63,3.50,0.81,1.49
+Saturated fat (mg),Higher income,26.41,17.39,9.02,2.83,3.62,0.46,2.11
+Total fat (gm),Total population,76.63,50.77,25.86,7.60,10.91,1.64,5.71
+Total fat (gm),Children,69.82,45.36,24.46,4.04,10.36,5.80,4.26
+Total fat (gm),Adults,78.89,52.56,26.33,8.78,11.09,0.26,6.20
+Total fat (gm),Lower income,72.01,49.20,22.81,5.23,10.78,2.20,4.60
+Total fat (gm),Higher income,79.55,51.76,27.79,9.10,10.99,1.28,6.42
+Sodium (mg),Total population,3370.28,2233.41,1136.86,358.01,451.27,72.95,254.64
+Sodium (mg),Children,3042.39,1999.08,1043.31,182.78,421.34,256.97,182.22
+Sodium (mg),Adults,3479.02,2311.13,1167.89,416.13,461.19,11.91,278.66
+Sodium (mg),Lower income,3174.65,2177.32,997.33,243.13,441.29,97.77,215.14
+Sodium (mg),Higher income,3494.15,2268.93,1225.23,430.76,457.58,57.23,279.65
+Grains - whole (cups),Total population,0.78,0.72,0.06,0.02,0.01,0.01,0.03
+Grains - whole (cups),Children,0.62,0.56,0.06,0.01,0.00,0.03,0.02
+Grains - whole (cups),Adults,0.83,0.77,0.07,0.02,0.01,0.00,0.03
+Grains - whole (cups),Lower income,0.67,0.62,0.05,0.01,0.01,0.01,0.02
+Grains - whole (cups),Higher income,0.85,0.77,0.07,0.02,0.01,0.01,0.03
+Grains - refined (cups),Total population,5.68,3.75,1.93,0.51,0.89,0.13,0.40
+Grains - refined (cups),Children,5.84,3.87,1.97,0.30,0.84,0.48,0.35
+Grains - refined (cups),Adults,5.63,3.71,1.92,0.58,0.91,0.02,0.41
+Grains - refined (cups),Lower income,5.67,3.90,1.77,0.37,0.87,0.18,0.35
+Grains - refined (cups),Higher income,5.69,3.65,2.04,0.60,0.90,0.10,0.43
+Protein foods (cups),Total population,5.68,3.83,1.85,0.65,0.72,0.09,0.39
+Protein foods (cups),Children,4.33,2.88,1.45,0.28,0.63,0.31,0.22
+Protein foods (cups),Adults,6.13,4.15,1.98,0.77,0.75,0.02,0.44
+Protein foods (cups),Lower income,5.29,3.67,1.62,0.45,0.71,0.12,0.33
+Protein foods (cups),Higher income,5.93,3.94,1.99,0.77,0.73,0.07,0.42
+Added sugars (tsp),Total population,17.73,13.17,4.56,0.98,1.59,0.28,1.72
+Added sugars (tsp),Children,18.43,13.17,5.26,0.87,1.70,0.99,1.70
+Added sugars (tsp),Adults,17.50,13.17,4.33,1.01,1.55,0.04,1.73
+Added sugars (tsp),Lower income,18.59,14.26,4.32,0.78,1.67,0.38,1.51
+Added sugars (tsp),Higher income,17.18,12.48,4.71,1.10,1.54,0.21,1.86
+Oils (grams),Total population,21.15,13.75,7.40,2.38,3.16,0.39,1.47
+Oils (grams),Children,17.97,11.30,6.67,1.17,3.19,1.33,0.98
+Oils (grams),Adults,22.20,14.56,7.64,2.78,3.15,0.08,1.64
+Oils (grams),Lower income,19.12,12.84,6.28,1.56,3.10,0.48,1.15
+Oils (grams),Higher income,22.43,14.32,8.11,2.90,3.20,0.33,1.68
+Solid fats (grams),Total population,37.44,24.44,13.00,3.53,5.51,0.88,3.08
+Solid fats (grams),Children,36.08,23.29,12.79,2.02,5.13,3.18,2.47
+Solid fats (grams),Adults,37.89,24.82,13.07,4.03,5.64,0.12,3.28
+Solid fats (grams),Lower income,35.72,24.09,11.63,2.48,5.48,1.21,2.46
+Solid fats (grams),Higher income,38.53,24.67,13.86,4.19,5.53,0.67,3.47

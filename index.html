@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>New Age - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.css" rel="stylesheet">
+    <link href="css/jeremy.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">American Food Trends</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="#budget">Our Food Budget</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#budget1">Budgets and Time</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#time">Cooking Less At Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#homeaway">Food at Home and Away</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#lifestyle">A New Lifestyle</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="grey">
+                    <div class="col-sm-12">
+                        <div class="header-content">
+                            <div class="header-content-inner">
+                                <h1>The American Lifestyle:</h1>
+                                <h2>Food Trends in Relation to Time and Money</h2>
+                                <br>
+                                <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/vz_sWZAqeVw"-->
+                                        <!--frameborder="0" allowfullscreen></iframe>-->
+                                <br>
+                                <br>
+                                <br>
+                                <a href="#video" class="btn btn-outline btn-xl page-scroll" style="color: #ffffff;">What are American's Eating?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="video" class="download bg-primary text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="video">
+                        <iframe width="889" height="500" src="https://www.youtube.com/embed/Vt-rPHXQPIc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--2-->
+    <!--NGOC-->
+
+    <section id="budget" class="features">
+        <div class="container">
+            <div class="dark">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="section-heading">
+                            <h3>Our Food Budget</h3>
+                            <!--<h3>Ngoc: Section 2</h3>-->
+                            <h4 class="text_muted">Where are people spending their money?</h4>
+                            <!--<hr>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>A closer look at our spending and our food:</h4>
+                        <div id="line-chart-legend">
+
+                            <font color="#444443"><b></b><span id="green"></span></font>
+                            vs.
+                            <font color="#3e8405"><span id="gray"></span></font>
+
+                        </div>
+
+                        <div id="line-chart"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Today, consumption of food prepared outside of the home plays a large part in the American eating habits. In 1959, 19.44% of food expenditures are spent away from the home, compared to 2014, that number has increased to 46.99%.</p>
+                        <div id="button-area">
+                            <button class="button" value="income" onclick="linechart.wrangleData('income')">Food Expenditures </br> vs. </br> Income</button>
+                            <button class="button" value="percentage" onclick="linechart.wrangleData('percentage')">Food Away </br> vs. </br> Food at Home</button>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="row">-->
+                    <!--<div class="col-md-12 text-center">-->
+                        <!--<div class="section-heading">-->
+                            <!--<h3>Budget Breakdown</h3>-->
+                            <!--&lt;!&ndash;<h3>Ngoc: Section 2</h3>&ndash;&gt;-->
+                            <!--<h4 class="text_muted">What are people spending their money on?</h4>-->
+                            <!--&lt;!&ndash;<hr>&ndash;&gt;-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>What are people spending their money on?</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="timeline"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text_muted">Out of all of the places where Americans can eat out, a large amount is spent on restaurants.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="stacked-area-chart"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#budget1" class="btn btn-outline btn-xl page-scroll">Budget and Time</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="budget1" class="features">
+        <div class="container">
+            <div class="dark">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="section-heading">
+                            <h3>Budget and Time</h3>
+                            <h4 class="text_muted">A Closer Look at Budgets Across Social Groups and <br> Time Spent Cooking at Home Throughout The World.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text_muted">The trend of increase in dining out are similar across all socio-demographics groups.<br>
+                            The graphs below highlight the increased purchases of food away from home in each socio-economic group.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="text_muted">Low Income</p>
+                        <div id="bar-chart-low"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text_muted">Middle Income</p>
+                        <div id="bar-chart-middle"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text_muted">High Income</p>
+                        <div id="bar-chart-high"></div>
+                    </div>
+                </div>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>On average, Americans are spending 51 minutes cooking per week, well below the average. <br> Heading the pack are India and Ukraine.</h4>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="world-map"></div>
+                        <div id="world-map-info"></div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="#time" class="btn btn-outline btn-xl page-scroll">How much time do you have?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--3-->
+
+    <section id="time" class="bg-primary">
+        <div class="container">
+            <div class="dark">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h3>Cooking less at home</h3>
+                        <!--<h3>Section 3</h3>-->
+                        <h4 class="text_muted">A Response to a Social Shift</h4>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <p> In 2015, the labor force consists of 46.8% women vs in 1948, only 28.6% are women.</p>
+                    <div id="people-icon"></div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <h4>Average Time Women Cook at Home</h4>
+                    <br>
+                    <div id="cooking-time"></div>
+                    <p>Women, who traditionally have carried the brunt of the cooking load, <br>
+                        are working more outside home, and therefore spending less time at home cooking. <br>
+
+                        In 2008, women spent 66 minutes per day cooking, almost 50 minutes <br>
+                        less than in the 1960s,when they spent upward of 112 minutes on average.</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#homeaway" class="btn btn-outline btn-xl page-scroll">Food at Home and Away</a>
+                </div>
+            </div>
+        </div></div>
+    </section>
+
+    <!--5-->
+    <!--RAMON-->
+
+    <section id="homeaway" class="bg-primary">
+        <div class="container">
+            <div class="dark">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h3>Food at Home and Away</h3>
+                        <!--<h3>Section 5</h3>-->
+                        <h4 class="text_muted">Where are people eating?</h4>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <center> Average daily intake
+                        <br> consumption broken down by types of food
+                        <br> What people should eat - benchmark <br> versus what people actually eat
+                        <br> Broken down by age, income level
+                        <br> for US adult population
+                    </center>
+                    <div id="sankeybar" style="height: 300px"></div>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/image.jpg" class="img-responsive" style="width:100%" alt="Image">
+                    <p class="quote">“Frequent consumption of away-from-home foods contributes to obesity, hypertension, diabetes, heart disease, and cancer.”
+                        <br> <br>Cohen, Obesity Review (2012) 13, 618–629</p>
+                </div>
+                            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="row">
+                <h4 style='text-align: center;'>Unhealthy Eating at Home and Away</h4>
+                <p style='text-align: center;'>Percentage of Recommended Food Consumption Broken Down by Location</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="sankey" style="width:1100px; height:500px; align-items: center;">
+                        <script src="js/Section 4/dailyintake.js"></script>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style='text-align: center;'>Future Generations at Risk</h4>
+                    <p style='text-align: center;'>Average daily intake vs recommended quantities - US population broken down by age and income level</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="radar"></div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <svg width="40" height="40">
+                                <circle cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="yellow" style="opacity: .5;"/>
+                            </svg>
+                        </div>
+                        <div class="col-md-10">
+                            <p>Adults</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <svg width="40" height="40">
+                                <circle cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="red" style="opacity: .5;"/>
+                            </svg>
+                        </div>
+                        <div class="col-md-10">
+                            <p>Children</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <svg width="40" height="40">
+                                <circle cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="turquoise" style="opacity: .5;"/>
+                            </svg>
+                        </div>
+                        <div class="col-md-10">
+                            <p>Low Income</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <svg width="40" height="40">
+                                <circle cx="20" cy="20" r="15" stroke="black" stroke-width="1" fill="darkblue" style="opacity: .5;"/>
+                            </svg>
+                        </div>
+                        <div class="col-md-10">
+                            <p>High Income</p>
+                        </div><br><br><br><br><br><br>
+                        <p class="quote">“The kind of food we eat in this country is the kind that is most profitable”
+                            <br> <br> Agricultural historian John Ikerd <br>The Weight of the Nation</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div ng-app="RadialGaugeDemo">
+                        <div ng-controller="RadialGaugeDemoCtrl">
+                            <h4 style="text-align: center">Food Consumption Patterns Broken Down by Type of Food</h4>
+                            <br>
+                            <br>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Oils</td>
+                                        <td>Fruits</td>
+                                        <td>Dairy</td>
+                                        <td>Vegetables</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="25%">
+                                            <div width="100%" ng-radial-gauge ranges="ranges" value=12.95 value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+                                        </td>
+                                        <td width="25%">
+                                            <div width="100%" ng-radial-gauge ranges="ranges" value=52.50 value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+                                        </td>
+                                        <td width="25%">
+                                            <div width="100%" ng-radial-gauge ranges="ranges" value=54.67 value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+                                        </td>
+                                        <td width="25%">
+                                            <div width="100%" ng-radial-gauge ranges="ranges" value=63.60 value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Grains</td>
+                                        <td>Protein</td>
+                                        <td>Solid Fats</td>
+                                        <td>Added Sugars</td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20%">
+                                            <div width="100%" ng-radial-gauge ranges="ranges" value=107.63 value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+                                        </td>
+                                        <td width="20%">
+                                            <div width="100%" ng-radial-gauge ranges="ranges" value=122.60 value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+                                        </td>
+                                        <td width="20%">
+                                            <div width="100%" ng-radial-gauge ranges="ranges" value=157.88 value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+                                        </td>
+                                        <td width="20%">
+                                            <div width="100%" ng-radial-gauge ranges="ranges" value=260.42 value-unit="unit" precision="precision" lower-limit="lowerLimit" upper-limit="upperLimit"></div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#lifestyle" class="btn btn-outline btn-xl page-scroll">Changes in lifestyle?</a>
+                </div>
+            </div>
+        </div></div>
+    </section>
+
+    <!--6-->
+
+    <section id="lifestyle" class="features">
+        <div class="container">
+            <div class="dark">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h3>What are the results of this new lifestyle</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="paragraph">
+                    <p class="text_muted">Researchers have found a positive correlation between dietary habits and body weight.
+                        Because of higher calorie count and poorer nutritional choice of meals and snacks,
+                        the rate of overweight and obesity is at record high. </p>
+                </div>
+                <br>
+                <div class="col-md-4">
+                    <center><img src="img/scale.png" height="70" width="70"></center><br>
+                   <p class="text_muted"></pclass> <b>What the BMI says:</b><br><br>
+                    Below 18.5: underweight<br>
+                    18.5-24.9: normal<br>
+                    25-29.9: overweight<br>
+                    30 or higher: obese</p><br>
+                </div>
+                <div class="col-md-4">
+                    <center><img src="img/US icon.png" height="100" width="100"></center>
+                    <p class="text_muted">Nationally, nearly <b>68.8%</b> of adults (ages 20+) are overweight or obese and nearly <b>8%</b> are extremely obese.
+                    In 1950, only <b>10%</b> of of adults were classified as obese.</p>
+                </div>
+                <div class="col-md-4">
+                    <center><img src="img/child.png" height="100" width="100"></center><br>
+                    <p class="text_muted">Among youngsters (ages 2-19), about <b>31.8%</b> are considered to be either overweight or obese.</p>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="row">
+                <div class="col-md-4">
+                    <center><img src="img/trend.png" height="100" width="100"></center><br>
+                    <p class="text_muted">By 2030, <b>51%</b> of the population will be obese by 2030 if the rate of obesity stays consistent.</p>
+                </div>
+                <div class="col-md-4">
+                    <center><img src="img/health.png" height="100" width="100"></center><br>
+                    <p class="text_muted">Obesity is linked to more than 60 chronic diseases including heart disease, stroke, some cancers, and type 2 diabetes.</p>
+                </div>
+                <div class="col-md-4">
+                    <center><img src="img/money.png" height="100" width="100"></center><br>
+                    <p class="text_muted">The estimated annual health care costs of obesity-related illness are a staggering $190.2 billion, nearly 21% of annual medical spending.</p>
+                </div>
+            </div>
+        </div></div>
+        <!--<div class="overlay"></div>-->
+    </section>
+
+    <!--7-->
+
+    <footer>
+        <div class="container">
+            <p>&copy; Three Blind Mice.</p>
+            <ul class="list-inline">
+                <li>
+                    <a href="http://www.jeremycburke.com" target="_blank">Jeremy</a>
+                </li>
+                <li>
+                    <a href="http://rcc.harvard.edu/people/ramon-gras-alom%C3%A0" target="_blank">Ramon</a>
+                </li>
+                <li>
+                    <a href="http://www.ngoctdoan.com/about/" target="_blank">Ngoc</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!--Load JS Libraries-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/queue.v1.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/d3.tip.js"></script>
+    <script src="js/topojson.v1.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/d3-serv.js"></script>
+    <script src="js/ng-radial-gauge-dir.js"></script>
+    <script src="js/guageindex.js"></script>
+
+
+    <!--Section 2: NGOC-->
+    <script src="js/stackedAreaChart.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/lineChart.js"></script>
+    <script src="js/barChart.js"></script>
+    <script src="js/worldmap.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!--Section 3: XXXX-->
+
+    <script src="js/iconArray.js"></script>
+
+
+    <!--Section 4: Ramon-->
+    <script src="ext/raphael.js" type="text/javascript"></script>
+    <script src="ext/jquery.js" type="text/javascript"></script>
+    <script src="js/Section 4/sankey.js" type="text/javascript"></script>
+    <script src="js/Section 4/barchartjeremy.js" type="text/javascript"></script>
+    <script src="js/Section 4/dailyintake.js"></script>
+    <script src="js/radar.js"></script>
+    <script src="js/radardata.js"></script>
+
+
+
+    <!--Section 5: XXXX-->
+
+    <!--Section 6: XXXX-->
+
+    <!--Section 7: XXXX-->
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+
+</body>
+
+</html>

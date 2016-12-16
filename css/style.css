@@ -1,0 +1,141 @@
+
+
+/*body {*/
+  /*font-family: 'Abel', sans-serif;*/
+  /*background-color: #f7f7f7;*/
+  /*text-align: center;*/
+/*}*/
+
+/*h1 {*/
+  /*font-weight: 100;*/
+  /*font-size: 32px;*/
+  /*margin-top: 50px;*/
+  /*color: white;*/
+/*}*/
+
+/*h2 {*/
+  /*font-weight: 300;*/
+  /*font-size: 18px;*/
+  /*margin-bottom: 40px;*/
+  /*color: white;*/
+/*}*/
+
+
+.container-fluid {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.browser text {
+  text-anchor: end;
+}
+
+.area {
+  opacity: 0.7;
+  clip-path: url(#clip);
+}
+.area:hover {
+  opacity: 1;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+/****************/
+/*  LINE CHART  */
+/****************/
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+.axis text {
+  font-size: 11px;
+}
+
+.axis-title {
+  fill: gray;
+  font-size: 11px;
+}
+
+.line {
+  fill: none;
+  stroke: blue;
+  stroke-width: 2.5px;
+}
+
+/****************/
+/*  BAR CHART  */
+/****************/
+
+.bar:hover {
+  fill: gray ;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 10px;
+  background: rgba(0, 0, 0, 90);
+  color: white;
+  border-radius: 2px;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+/****************/
+/*  WORLD MAP  */
+/****************/
+.dots:hover {
+  fill: darkgreen;
+  opacity: 1;
+}
+
+/****************/
+/*  SANKEY AND RADAR */
+/****************/
+
+.body {
+  font-family: 'Abel', sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  text-align: center;
+  cursor: default;
+}
+
+.legend {
+  font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  fill: #333333;
+}
+
+.tooltip {
+  fill: #333333;
+}
+
+
+.rect {
+.style("fill-opacity", 70});
+}
+
+.video{
+  align-content: center;
+}
